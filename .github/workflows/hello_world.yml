@@ -21,23 +21,32 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      # Устанавливаем Node.JS для сборки приложения
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
         with:
-          node-version: '14'
+          path: './source'
 
-      # Устанавливаем yfm-docs
-      - name: Install yfm-docs
-        run: npm i -g @doc-tools/docs
+      - uses: mshick/add-pr-comment@v1
+        with:
+          message: "head_ref: ${{ github.head_ref }}, ref: ${{ github.ref }}"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
+          allow-repeats: false # This is the default
 
-      # Runs a single command using the runners shell
-      - name: Run yfm-docs
-        run: yfm -i ./ -o ./output
+#       # Устанавливаем Node.JS для сборки приложения
+#       - name: Setup Node.js environment
+#         uses: actions/setup-node@v2.1.2
+#         with:
+#           node-version: '14'
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+#       # Устанавливаем yfm-docs
+#       - name: Install yfm-docs
+#         run: npm i -g @doc-tools/docs
+
+#       # Runs a single command using the runners shell
+#       - name: Run yfm-docs
+#         run: yfm -i ./source -o ./output
+
+#       # Runs a set of commands using the runners shell
+#       - name: Run a multi-line script
+#         run: |
+#           echo Add other actions to build,
+#           echo test, and deploy your project.
