@@ -719,7 +719,7 @@ subject | **[Subject](#Subject)**<br>Required. Identity for which access binding
 Field | Description
 --- | ---
 id | **string**<br><ul><li>`allAuthenticatedUsers`: A special system identifier that represents anyone </li><li>`allUsers`: A special system identifier that represents anyone. No authentication is required. </li><li>`<cloud generated id>`: An identifier that represents a user account. </li></ul> The maximum string length in characters is 50.
-type | **string**<br><ul><li>`userAccount`: An account on Yandex or [Yandex.Connect](./openapi-meta.yaml#Connect)(https://connect.yandex.com), added to Yandex.Cloud. </li><li>`serviceAccount`: A service account. This type represents the `yandex.cloud.iam.v1.ServiceAccount` resource. </li><li>`federatedUser`: A federated account. This type represents a user from an identity federation, like Active Directory. </li><li>`system`: System group. This type represents several accounts with a common system identifier. </li></ul> 
+type | **string**<br><ul><li>`userAccount`: An account on Yandex or [Yandex.Connect](https://connect.yandex.com), added to Yandex.Cloud. </li><li>`serviceAccount`: A service account. This type represents the `yandex.cloud.iam.v1.ServiceAccount` resource. </li><li>`federatedUser`: A federated account. This type represents a user from an identity federation, like Active Directory. </li><li>`system`: System group. This type represents several accounts with a common system identifier. </li></ul> 
 
 
 ## SetAccessBindings {#SetAccessBindings}
@@ -753,7 +753,7 @@ subject | **[Subject](#Subject)**<br>Required. Identity for which access binding
 Field | Description
 --- | ---
 id | **string**<br><ul><li>`allAuthenticatedUsers`: A special system identifier that represents anyone </li><li>`allUsers`: A special system identifier that represents anyone. No authentication is required. </li><li>`<cloud generated id>`: An identifier that represents a user account. </li></ul> The maximum string length in characters is 50.
-type | **string**<br><ul><li>`userAccount`: An account on Yandex or [Yandex.Connect](./openapi-meta.yaml#Connect)(https://connect.yandex.com), added to Yandex.Cloud. </li><li>`serviceAccount`: A service account. This type represents the `yandex.cloud.iam.v1.ServiceAccount` resource. </li><li>`federatedUser`: A federated account. This type represents a user from an identity federation, like Active Directory. </li><li>`system`: System group. This type represents several accounts with a common system identifier. </li></ul> 
+type | **string**<br><ul><li>`userAccount`: An account on Yandex or [Yandex.Connect](https://connect.yandex.com), added to Yandex.Cloud. </li><li>`serviceAccount`: A service account. This type represents the `yandex.cloud.iam.v1.ServiceAccount` resource. </li><li>`federatedUser`: A federated account. This type represents a user from an identity federation, like Active Directory. </li><li>`system`: System group. This type represents several accounts with a common system identifier. </li></ul> 
 
 
 ### Operation {#Operation8}
@@ -818,7 +818,7 @@ subject | **[Subject](#Subject)**<br>Required. Identity for which access binding
 Field | Description
 --- | ---
 id | **string**<br><ul><li>`allAuthenticatedUsers`: A special system identifier that represents anyone </li><li>`allUsers`: A special system identifier that represents anyone. No authentication is required. </li><li>`<cloud generated id>`: An identifier that represents a user account. </li></ul> The maximum string length in characters is 50.
-type | **string**<br><ul><li>`userAccount`: An account on Yandex or [Yandex.Connect](./openapi-meta.yaml#Connect)(https://connect.yandex.com), added to Yandex.Cloud. </li><li>`serviceAccount`: A service account. This type represents the `yandex.cloud.iam.v1.ServiceAccount` resource. </li><li>`federatedUser`: A federated account. This type represents a user from an identity federation, like Active Directory. </li><li>`system`: System group. This type represents several accounts with a common system identifier. </li></ul> 
+type | **string**<br><ul><li>`userAccount`: An account on Yandex or [Yandex.Connect](https://connect.yandex.com), added to Yandex.Cloud. </li><li>`serviceAccount`: A service account. This type represents the `yandex.cloud.iam.v1.ServiceAccount` resource. </li><li>`federatedUser`: A federated account. This type represents a user from an identity federation, like Active Directory. </li><li>`system`: System group. This type represents several accounts with a common system identifier. </li></ul> 
 
 
 ### Operation {#Operation9}
