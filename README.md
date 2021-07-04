@@ -4,6 +4,8 @@
 
 ## Про документацию
 
+терлим-бом-бом
+
 Документация разработана с использованием [Yandex Flavored Markdown](https://github.com/yandex-cloud/yfm-docs). [Подробнее про синтаксис](guides/yfm-syntax-ru.md).
 
 ## Как предложить правки
